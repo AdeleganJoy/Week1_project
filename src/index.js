@@ -1,10 +1,8 @@
-import "./styles.css";
+function display_message(){
+    document.getElementById("demo").innerHTML = "My notebook";
+}
 
-document.getElementById("app").innerHTML = `
-<h1>Hello world</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
-`;
+window.onload = function() {
+    var button = document.getElementById("my-button");
+    button.onclick = display_message;
+}

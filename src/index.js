@@ -1,5 +1,3 @@
-import "./styles.css";
-
-document.getElementById("app").innerHTML = `
-<h1>Hello world</h1>
-
+function display_message(){
+    document.getElementById("demo").innerHTML = "My notebook";
+}
